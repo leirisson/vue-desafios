@@ -1,18 +1,26 @@
 <script lang="ts">
-export default{
-    props:{
+export default {
+    props: {
         texto: String,
+        endereco: String,
     }
 }
 </script>
 <template>
+<!-- https://www.instagram.com/leirisson99/
+https://github.com/leirisson -->
 
-<button class="btb-redes-btn" >{{ texto }}</button>
+    <button class="btb-redes-btn">
+        <a :href="endereco">
+            {{ texto }}
+        </a>
+    </button>
+
 </template>
 
 
 <style scoped>
-.btb-redes-btn{
+.btb-redes-btn {
     padding: 1rem;
     border: none;
     width: 40%;
@@ -22,9 +30,14 @@ export default{
     font-weight: 600;
     border-radius: 1rem;
     transition: color .1s;
-    font-family:  "Krona One", serif;
+    font-family: "Krona One", serif;
 }
-.btb-redes-btn:hover{
-    background:var(--azul-hover) ;
+
+.btb-redes-btn:hover {
+    background: var(--azul-hover);
+}
+a{
+    text-decoration: none;
+    color: var(--preto);
 }
 </style>

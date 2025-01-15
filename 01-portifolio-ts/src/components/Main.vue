@@ -22,8 +22,8 @@ export default {
                 negócios e designers a colocarem em prática boas ideias. Vamos conversar?
             </p>
             <div class="btb-redes">
-                <Button texto="Instagram"/>
-                <Button texto="GitHub"/>
+                <Button texto="Instagram" endereco="https://www.instagram.com/leirisson99/"/>
+                <Button texto="GitHub" endereco="https://github.com/leirisson"/>
             </div>
         </div>
         <div class="img_perfil">
